@@ -1,0 +1,15 @@
+<table style="width:100%">
+  <tr>
+    <th>Title</th>
+    <th>Original Url</th>
+    <th>Slug</th>
+    <th>Clicked</th>
+  </tr>
+  <tr>
+    <td><%= @url.title%></td>
+    <td><%= @url.original_url%></td>
+    <td><%= link_to @url.slug, shorten_path(short_url: @url.slug)%></td>
+    <td><%= @url.click_count%></td>
+  </tr>
+
+</table>

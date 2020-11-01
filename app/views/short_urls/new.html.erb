@@ -1,0 +1,6 @@
+
+<%= flash[:error] %>
+<%= form_with model: @url do |form| %>
+  <p>Please input long url: <%= form.text_field :original_url %></p>
+  <%= form.submit %>
+<% end %>

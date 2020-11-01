@@ -1,0 +1,14 @@
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+
+
+domains = ["https://www.google.com", "https://youtube.com", "https://apple.com", "https://cloudflare.com", "https://www.blogger.com", "https://support.google.com", "https://play.google.com", "https://microsoft.com", "https://en.wikipedia.org", "https://wordpress.org", "https://adobe.com", "https://docs.google.com", "https://maps.google.com", "https://mozilla.org", "https://linkedin.com", "https://accounts.google.com", "https://drive.google.com", "https://vimeo.com", "https://sites.google.com", "https://googleusercontent.com", "https://plus.google.com", "https://europa.eu", "https://youtu.be", "https://es.wikipedia.org", "https://amazon.com", "https://bbc.co.uk", "https://line.me", "https://facebook.com", "https://bp.blogspot.com", "https://vk.com", "https://uol.com.br", "https://istockphoto.com", "https://github.com", "https://cnn.com", "https://forbes.com", "https://creativecommons.org", "https://w3.org", "https://fr.wikipedia.org", "https://policies.google.com", "https://mail.ru", "https://jimdofree.com", "https://t.me", "https://google.co.jp", "https://bbc.com", "https://google.co.uk", "https://who.int", "https://paypal.com", "https://news.yahoo.com", "https://news.google.com", "https://globo.com", "https://developers.google.com", "https://hugedomains.com", "https://dropbox.com", "https://theguardian.com", "https://live.com", "https://slideshare.net", "https://nih.gov", "https://medium.com", "https://google.de", "https://msn.com", "https://washingtonpost.com", "https://get.google.com", "https://opera.com", "https://wikimedia.org", "https://feedburner.com", "https://google.com.br", "https://www.yahoo.com", "https://reuters.com", "https://gstatic.com", "https://myspace.com", "https://imdb.com", "https://whatsapp.com", "https://dailymotion.com", "https://google.es", "https://nytimes.com", "https://pt.wikipedia.org", "https://mail.google.com", "https://bloomberg.com", "https://wsj.com", "https://youronlinechoices.com", "https://ebay.com", "https://ok.ru", "https://telegram.me", "https://fb.com", "https://de.wikipedia.org", "https://amazon.de", "https://photos.google.com", "https://goo.gl", "https://sedo.com", "https://aliexpress.com", "https://picasaweb.google.com", "https://booking.com", "https://tinyurl.com", "https://google.fr", "https://huffingtonpost.com", "https://android.com", "https://twitter.com", "https://office.com", "https://namecheap.com", "https://harvard.edu"]
+
+domains.each do |domain|
+  ShortUrl.create(original_url: domain)
+end
