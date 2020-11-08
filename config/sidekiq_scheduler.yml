@@ -1,0 +1,2 @@
+FetchTitleJob:
+  cron: "55 23 * * *"

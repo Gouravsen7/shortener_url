@@ -9,7 +9,7 @@
     <tr>
       <td><%= url.title%></td>
       <td><%= url.original_url%></td>
-      <td><%= link_to url.slug, shorten_path(short_url: url.slug)%></td>
+      <td><%= link_to "#{request.base_url}#{shorten_path(short_url: url.slug)}", shorten_path(short_url: url.slug)%></td>
       <td><%= url.click_count%></td>
     </tr>
   <% end %>
